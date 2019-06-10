@@ -1,7 +1,7 @@
 name: 'dbt_learn'
 version: '1.0'
 
-profile: 'dbt_learn'
+profile: 'learn_project'
 
 source-paths: ["models"]
 analysis-paths: ["analysis"]
