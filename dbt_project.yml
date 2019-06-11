@@ -15,3 +15,6 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "dbt_modules"
 
 models:
+  dbt_learn:
+    marts:
+      materialized: table
