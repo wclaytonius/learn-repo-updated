@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_listings_history
+  - name: stg_listing_history
     description: Daily AirBnB listings availability in Colorado
     columns:
       - name: id
