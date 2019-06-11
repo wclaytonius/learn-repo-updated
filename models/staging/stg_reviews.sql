@@ -9,8 +9,8 @@ renamed as (
 
     select
 
-        id as reviews_id,
-        review as review_id,
+        id as review_id,
+        review as reviewer_id,
         listing_id,
         reviewer_name,
         comments,
