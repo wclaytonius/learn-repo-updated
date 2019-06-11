@@ -1,7 +1,7 @@
 
 with source as (
 
-    select * from source_data.reviews
+    select * from {{ source('source_data', 'reviews') }}
 
 ),
 
