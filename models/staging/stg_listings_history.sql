@@ -1,6 +1,6 @@
 with source as (
 
-    select * from source_data.listing_history
+    select * from {{ source('source_data', 'listing_history') }}
 
 ),
 
@@ -25,7 +25,11 @@ with_id as (
 
     select
 
---use surrogate key from dbt-utils   ('listing_id', 'available_date') as id,
+        --use surrogate key from dbt-utils
+        {{dbt_utils.surrogate_key(
+            'listing_id',
+            'available_date'
+        )}} as id,
         *
 
     from renamed
